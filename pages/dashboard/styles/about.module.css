@@ -1,0 +1,49 @@
+.aboutArea {
+  background-color: #11c5ef;
+  padding: 0px 0px 30px 0px;
+}
+.headLine {
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px gray;
+  margin-bottom: 40px;
+}
+
+.textarea {
+  height: 290px;
+  width: 100%;
+  border: 2px solid rgb(202, 204, 204);
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.301);
+}
+
+.textarea:focus {
+  outline: none;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.651);
+}
+
+.inputs {
+  border: 2px solid #fff !important;
+  border-radius: 3px !important;
+  padding-left: 5px !important;
+  font-weight: 700;
+  margin-bottom: 5px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.inputs::placeholder {
+  color: #dee2e2;
+  font-weight: 700;
+}
+.inputs:focus {
+  outline: none;
+  border: 3px solid rgb(255, 196, 0) !important;
+}
+
+.aboutTitle {
+  font-size: 27px;
+  font-weight: 700;
+}

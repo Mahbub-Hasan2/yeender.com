@@ -1,0 +1,99 @@
+.area {
+  padding: 0px 0px 50px 0px;
+}
+
+.main_Head_img_bg {
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  height: 250px;
+  margin-bottom: 30px !important;
+}
+
+.bg_img_overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(10, 60, 126, 0.363);
+  /* background: linear-gradient(48deg, #6363d350, ); */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bg_img_overlay h2 {
+  font-weight: 900;
+  font-size: 40px;
+  color: #fff;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.main_title {
+  font-weight: 700;
+}
+
+.avatar_headLine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title_c_icons {
+  /* margin-top: 15px; */
+}
+
+.title_c_icons button {
+  margin: 5px;
+  border-radius: 15px;
+  color: #fff;
+  padding: 3px 10px;
+  font-weight: 700;
+  border: 1px solid rgb(227, 245, 246);
+  background: linear-gradient(140deg, #0cb1fd, rgb(0, 60, 255));
+}
+
+.cardInputs {
+  border: 1px solid #0d8fee !important;
+  height: 30px !important;
+  font-weight: 600;
+  /* background: linear-gradient(48deg, #ffbb00, red); */
+}
+
+.cardInputs::placeholder {
+  padding-left: 7px;
+  color: rgba(68, 68, 68, 0.534);
+  font-weight: 700;
+}
+
+.cardInputsPhone {
+  border: 1px solid #0d8fee !important;
+  height: 30px !important;
+  font-weight: 600 !important;
+  width: 95% !important;
+}
+
+.cardTextArea {
+  border: 1px solid #0d8fee;
+  height: 120px;
+  font-weight: 600;
+  padding-left: 7px !important;
+}
+
+.cardTextArea:focus {
+  outline: none;
+  border-bottom: 2px solid #0d8fee;
+}
+
+.submitBtn {
+  width: 100%;
+  font-weight: 900 !important;
+  color: #fff !important;
+  margin-top: 5px !important;
+  background: linear-gradient(48deg, #0cc5fd, rgb(0, 60, 255));
+  /* background: linear-gradient(48deg, #ffbb00, red); */
+}

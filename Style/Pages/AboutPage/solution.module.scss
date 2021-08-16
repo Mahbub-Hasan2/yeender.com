@@ -1,0 +1,22 @@
+@import "../AboutPage/vision.module.scss";
+
+.about_solution_component_area {
+  padding: 50px 0px;
+  @extend .container;
+}
+
+@media (max-width: 640px) {
+  .about_solution_component_area {
+    padding: 10px 0px;
+    .col {
+      h3 {
+        font-size: 22px;
+        line-height: 29px;
+        padding-top: 20px;
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+}

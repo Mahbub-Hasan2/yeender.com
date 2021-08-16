@@ -1,0 +1,21 @@
+.dashboardPage {
+  padding: 0px 0px 30px 0px;
+  background: linear-gradient(48deg, #11cbef, #1172ef);
+}
+
+.headLine {
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.dasContent {
+  text-align: center;
+  background-color: #fff;
+}
+.mainCard {
+  font-weight: 700;
+  color: #fff !important;
+  background: linear-gradient(48deg, #11cbef, #1172ef);
+}

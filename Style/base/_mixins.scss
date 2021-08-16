@@ -1,0 +1,23 @@
+// clients-count-style
+@mixin clients-count-style(
+  $counts-fonts-weight,
+  $counts-fonts-size,
+  $title-size,
+  $title-weight
+) {
+  div {
+    border-left: 2px solid $yellow;
+    text-align: left;
+    h5 {
+      margin: 0px;
+      font-weight: $counts-fonts-weight;
+      font-size: $counts-fonts-size;
+    }
+    p {
+      padding: 0px;
+      margin: 0px;
+      font-weight: $title-weight;
+      font-size: $title-size;
+    }
+  }
+}

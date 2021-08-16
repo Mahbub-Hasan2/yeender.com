@@ -1,0 +1,15 @@
+.card {
+  max-width: 100%;
+}
+.reviewArea {
+  padding: 0px 0px 30px 0px;
+  background: linear-gradient(48deg, #11cbef, #1172ef);
+}
+
+.hadeLine {
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 30px 0px;
+  text-align: center;
+}

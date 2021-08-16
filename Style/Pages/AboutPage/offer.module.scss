@@ -1,0 +1,77 @@
+@import "../../base/variables";
+@import "../../Pages/AboutPage/ChooseUe.module.scss";
+
+.about_offer_component_area {
+  background: $yellow;
+  padding: 80px 0px;
+  margin: 50px 0px;
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    .head_line {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;
+      h3 {
+        font-weight: 700;
+        color: $fontColor;
+      }
+      p {
+        margin-bottom: 30px;
+      }
+    }
+
+    .contents {
+      .opctions {
+        .opction {
+          display: flex;
+          margin: 5px 0px;
+
+          .icon {
+            padding: 8px 10px;
+            margin: 2px;
+            height: 38px;
+            border-radius: 50px;
+            font-weight: bold;
+            color: $yellow;
+            background: $fontColor;
+          }
+          .ops {
+            margin-left: 10px;
+            h5 {
+              font-weight: 800;
+              font-size: 17px;
+              margin-bottom: 3px;
+            }
+            p {
+              line-height: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .about_offer_component_area {
+    padding: 30px 10px;
+    margin: 10px 0px;
+    .container {
+      .contents {
+        .opctions {
+          .opction {
+            margin: 2px 0px;
+
+            .ops {
+              p {
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

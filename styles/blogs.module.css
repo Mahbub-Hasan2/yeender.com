@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+/* font-family: 'DM Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+
+.MainHeadline {
+  padding: 30px 0px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding-bottom: 0px;
+}
+
+.blogsHr {
+  height: 5px;
+  background: #4f94ee;
+  margin-bottom: 45px !important;
+  width: 25%;
+  margin: 0 auto;
+  border-radius: 50px;
+}
+
+.blogTitle {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.blogTitle:hover {
+  color: rgb(0, 132, 255);
+}
+
+.expand {
+  transform: rotate(0deg);
+}
+.expandOpen {
+  transform: rotate(180deg);
+}
+
+.blog_img {
+  height: 300px;
+  width: 100%;
+  overflow: auto;
+}
+
+.blog_img::-webkit-scrollbar {
+  width: 10px;
+}
+
+.blogDetails {
+  /* height: 70vh; */
+  overflow: auto;
+}
+
+.blog_description {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 17px !important;
+}

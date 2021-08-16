@@ -1,0 +1,30 @@
+@import "../../../../Style/base/variables";
+
+.contents {
+  max-width: 100%;
+}
+
+.input {
+  border: 2px solid $yellow;
+  width: 100%;
+  margin: 5px 0px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.input::placeholder {
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.textarea {
+  border: 2px solid $yellow;
+  width: 100%;
+  margin: 5px 0px;
+  padding: 5px;
+  border-radius: 5px;
+  height: 250px;
+}
+.textarea:focus {
+  outline: none;
+}

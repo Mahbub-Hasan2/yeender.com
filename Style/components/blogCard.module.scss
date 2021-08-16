@@ -1,0 +1,58 @@
+@import '../base/variables';
+
+.blogCard {
+  .img_date {
+    img {
+      border-radius: 5px;
+      border: 2px solid $yellow;
+      width: 100%;
+    }
+    h5 {
+      position: relative;
+      color: #fff;
+      background: $yellow;
+      border-radius: 5px;
+      width: 44px;
+      height: 44px;
+      font-size: 14px;
+      text-align: center;
+      padding-top: 7px;
+      bottom: 60px;
+      left: 15px;
+      margin-bottom: 0px;
+    }
+  }
+
+  .card_content {
+    position: relative;
+    bottom: 20px;
+    padding: 0px 20px;
+    h5 {
+      font-weight: 600;
+      font-size: 19px;
+      margin-bottom: 0px;
+      cursor: pointer;
+    }
+    h5:hover {
+      color: blue;
+    }
+  }
+
+  .user {
+    div {
+      width: 35px;
+      height: 35px;
+    }
+    h6 {
+      // font-size: 15px;
+      font-size: 12px;
+      padding-top: 10px;
+      color: $yellow;
+    }
+    div {
+      h6 {
+        font-size: 15px;
+      }
+    }
+  }
+}

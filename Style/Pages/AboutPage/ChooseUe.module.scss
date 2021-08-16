@@ -1,0 +1,73 @@
+@import "../../base/variables";
+@import "../AboutPage/vision.module.scss";
+
+.about_Choose_component_area {
+  margin: 30px 0px !important;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  div {
+    .col {
+      padding: 0px 30px;
+    }
+    div {
+      h3 {
+        font-weight: 700;
+        margin-bottom: 15px;
+        line-height: 40px;
+      }
+      p {
+      }
+
+      .opctions {
+        .opction {
+          display: flex;
+          margin: 5px 0px;
+
+          .icon {
+            padding: 8px 10px;
+            margin: 2px;
+            height: 38px;
+            border-radius: 50px;
+            font-weight: bold;
+            background: $yellow;
+          }
+          .ops {
+            margin-left: 10px;
+            h5 {
+              font-weight: 800;
+              font-size: 17px;
+              margin-bottom: 3px;
+            }
+            p {
+              line-height: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 369px) {
+  .about_Choose_component_area {
+    margin: 10px 0px !important;
+  }
+  .container {
+    div {
+      .col {
+        padding: 0px 30px;
+      }
+      div {
+        h3 {
+          margin-bottom: 10px;
+          line-height: 28px;
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

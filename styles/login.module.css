@@ -1,0 +1,72 @@
+.loginArea {
+  height: 100vh;
+  background-image: url("https://i.imgur.com/cCmx7Bz.jpg");
+  background-size: cover;
+}
+
+.title {
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 2px 2px rgb(162, 162, 168);
+  margin-bottom: 40px;
+}
+
+.LoginBtn {
+  width: 40%;
+  background: #fff !important;
+  margin: 0 auto !important;
+  font-weight: 900 !important;
+  font-size: 20px !important;
+  color: #fff !important;
+  border-radius: 50px !important;
+  box-shadow: 0px 0px 5px 5px rgba(173, 173, 173, 0.589);
+  font-size: 25px !important;
+}
+.T_login {
+  color: #e43023;
+  /* text-shadow: 2px 2px #fff; */
+}
+
+.T_width {
+  color: #fed100;
+  /* text-shadow: 2px 2px #fff; */
+}
+
+.T_google {
+  color: #4caf50;
+  margin-right: 10px;
+  /* text-shadow: 2px 2px #fff; */
+}
+
+@media (max-width: 900px) {
+  .LoginBtn {
+    width: 90%;
+  }
+}
+
+@media (max-width: 451px) {
+  .LoginBtn {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 358px) {
+  .LoginBtn {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 322px) {
+  .LoginBtn {
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 289px) {
+  .LoginBtn {
+    font-size: 12px !important;
+    width: 100% !important;
+    border-radius: 0px !important;
+  }
+}

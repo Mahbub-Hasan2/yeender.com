@@ -1,0 +1,18 @@
+@import "../base/variables";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+.navbar_area {
+  .left_links {
+    margin: 0 auto;
+    font-family: "Poppins", "Hind Siliguri", sans-serif;
+
+    .nav_link {
+      font-weight: 600;
+      font-size: large;
+      color: $fontColor;
+      padding: 8px 15px;
+    }
+  }
+}

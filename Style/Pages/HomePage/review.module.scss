@@ -1,0 +1,77 @@
+@import "../../base/variables";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+.review_area {
+  background: #f5f7ff;
+  padding: 80px 0px;
+  // font-family: "Roboto", sans-serif;
+  font-family: "Poppins", "Hind Siliguri", sans-serif;
+
+  .title_area {
+    text-align: center;
+    h3 {
+      color: $fontColor;
+      font-size: 35px;
+      line-height: 35px;
+      font-weight: 700;
+    }
+  }
+
+  .review_cards {
+    .avatar {
+      cursor: grab;
+      position: relative;
+      top: 40px;
+      .div {
+        background-color: #fff;
+        width: 95px;
+        padding: 10px;
+        border-radius: 50px;
+        margin: 0 auto;
+        div {
+          width: 76px;
+          height: 76px;
+        }
+      }
+    }
+    .contents {
+      cursor: grab;
+      padding: 30px;
+      background: #fff;
+      border-radius: 10px;
+      min-height: 280px;
+      text-align: center;
+      h5 {
+        margin-top: 10px;
+        color: #383838;
+        margin-bottom: 0px;
+      }
+      .starIcons {
+        color: $yellow;
+        padding: px 0px;
+
+        svg {
+          font-size: 20px;
+        }
+      }
+      p {
+        color: #383838;
+        font-size: 16px;
+      }
+      span {
+        color: #383838;
+        font-size: 16px;
+      }
+      br {
+        display: none !important;
+      }
+    }
+  }
+
+  .dot {
+    font-size: 50px;
+    text-align: center;
+  }
+}

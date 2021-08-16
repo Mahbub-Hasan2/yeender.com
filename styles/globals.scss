@@ -1,0 +1,997 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+  font-family: "Poppins", "Hind Siliguri", sans-serif;
+}
+
+@media (max-width: 900px) {
+  html::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+a {
+  color: #0468ec;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+// ---------------------------
+
+.text-white {
+  color: white !important;
+}
+
+/* service details from phone input style  */
+.form-control {
+  border: 1px solid #0d8fee !important;
+  height: 30px !important;
+  font-weight: 600 !important;
+  margin-bottom: 30px !important;
+  padding-left: 45px !important;
+  width: 89% !important;
+}
+
+/*********************************************************************
+%%%%%%%%%%%%%%%%%%%%%%% Navbar style area started %%%%%%%%%%%%%%%%%%%
+*********************************************************************/
+
+/*********************************************************************
+%%%%%%%%%%%%%%%%%%%%%%% Header style area started %%%%%%%%%%%%%%%%%%%
+*********************************************************************/
+header {
+  background: linear-gradient(48deg, #11cbef, #1172ef);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+}
+
+.heder-bg {
+  background-color: #080b1abb;
+  height: 100%;
+  width: 100%;
+}
+
+.header-contents {
+  color: #fff;
+}
+
+.header-contents h3 {
+  text-shadow: 4px 2px #1176ef;
+}
+
+.header-contents button {
+  border: 2px solid #fff;
+  padding: 10px 40px;
+  font-weight: 900;
+  border-radius: 50px;
+  background: #080b1a;
+  color: #fff;
+}
+
+/******************NEW Header SVG & Text started here***********************/
+/*********************************************************************
+%%%%%%%%%%%%%%%%%%%%%%% New Header style area started %%%%%%%%%%%%%%%%%%%
+*********************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+.header_area {
+  background: #59b2f7;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header_area::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-image: url(../public/wave-bottom.svg);
+  height: 275px;
+}
+
+.newHeader_text {
+  font-size: bold;
+  font-weight: bold;
+}
+
+.newHeader_text h1 {
+  font-weight: bold;
+  font-size: 50px;
+  color: #696a6c;
+  font-family: "Lobster", cursive;
+}
+
+.header-content h3 {
+  color: #fbcf0a;
+}
+
+.header-content h5,
+p {
+  color: rgb(17, 16, 16);
+}
+
+@media only screen and (max-width: 770px) {
+  .header-content h3,
+  h5,
+  p {
+    color: black;
+  }
+  .header_area {
+    padding-top: 70px;
+    text-align: center;
+    height: 700px;
+  }
+  .header_area::after {
+    content: none;
+  }
+}
+
+/*********************************************************************
+%%%%%%%%%%%%%%%%%%%%%%% About area style started %%%%%%%%%%%%%%%%%%%
+*********************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+.about-area {
+  height: 600px;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-img {
+  width: 90%;
+}
+
+.about-content-texts h1 {
+  font-weight: 700;
+  color: #fbcf0a;
+}
+.about-content-texts h1:hover {
+  color: #696a6c;
+}
+.about-content-texts h6 {
+  font-weight: 400;
+  margin: 0px 0px 10px 0px;
+}
+
+.about-content-texts h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.about-content-texts p {
+  font-size: 16px;
+  color: #404040;
+  text-align: justify;
+}
+
+.about-details-btn {
+  margin: 40px 0px;
+  font-weight: 700 !important;
+  cursor: pointer;
+}
+
+// ------------
+
+.who_are_we {
+  h3 {
+    font-weight: 800;
+    border-bottom: 1px solid #72b8f1;
+  }
+}
+.we_provide {
+  @extend .who_are_we;
+}
+
+.why_chooseUs {
+  h3 {
+    font-weight: 800;
+    border-bottom: 1px solid #72b8f1;
+  }
+  p {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-area {
+    height: auto;
+  }
+  .about-img {
+    margin: 20px 0px;
+    width: 100%;
+  }
+}
+
+/*********************************************************************
+%%%%%%%%%%%%%%%%%%%%%%% Feature area style started %%%%%%%%%%%%%%%%%%%
+*********************************************************************/
+
+.feature-area {
+  padding: 50px 0px;
+}
+
+.feature-items-card h5 {
+  color: #fbcf0a;
+}
+
+.feature-items-card {
+  padding: 20px 10px;
+  transition: 0.5s !important;
+  cursor: pointer;
+  background: #fff;
+  height: 150px;
+}
+
+.feature-items-card:hover {
+  transform: scale(1.1) !important;
+  box-shadow: 1px 1px 5px 1px #4f94ee;
+  border-radius: 20px;
+  z-index: 3;
+}
+
+@media (max-width: 768px) {
+  .feature-area {
+    text-align: center;
+    padding: 10px;
+  }
+  .feature-items-card {
+    border: 2px solid #4f94ee;
+    padding: 30px 0px;
+    margin: 4px;
+    height: auto;
+  }
+}
+
+/*********************************************************************
+%%%%%%%%%%%%%%%%%%%%%%% server area style started %%%%%%%%%%%%%%%%%%%
+*********************************************************************/
+
+.service-area {
+  margin-bottom: 100px !important;
+}
+
+.serviceSeeMore {
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 0px 0px 30px 0px;
+  color: rgba(99, 176, 240, 0.9);
+}
+
+.serviceSeeMore:hover {
+  font-weight: 800;
+  color: #fbcf0a;
+}
+
+.serviceTitle {
+  font-weight: 700;
+}
+
+.service-main-title {
+  margin: 20px 0px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.service-main-title {
+  color: #696a6c;
+}
+
+.service-main-title:hover {
+  color: #fbcf0a;
+}
+
+.service-contents .card {
+  margin-bottom: 20px;
+  background-color: #f8f9fc;
+}
+
+.service-items {
+  overflow: hidden;
+}
+
+.service-overlay {
+  background: rgba(99, 176, 240, 0.7);
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.service-items:hover .service-overlay {
+  top: 0;
+}
+
+.service-title {
+  padding: 20px;
+  text-align: center;
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+.service-title h5 {
+  margin: 0px;
+  font-weight: 700;
+}
+
+.ser-overlay-p {
+  font-style: oblique;
+}
+
+@media (max-width: 400px) {
+  .service-main-title {
+    font-size: 18px;
+  }
+}
+
+/*********************************************************************
+%%%%%%%%%%%%%%%%% clients review area style started %%%%%%%%%%%%%%%%%%
+*********************************************************************/
+
+.review-area {
+  background: url("https://i.imgur.com/YaENTBA.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
+  position: relative;
+  padding: 50px 0px;
+}
+.review-area::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(99, 176, 240, 0.9);
+}
+.overlay {
+  position: relative;
+  z-index: 120;
+}
+
+.review-title {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.review-title {
+  color: #696a6c;
+  font-weight: 900;
+  margin-bottom: 50px !important;
+}
+
+.review-title:hover {
+  color: #fbcf0a;
+}
+
+.reviews {
+  background-color: rgba(255, 255, 255, 0.664);
+  width: 95%;
+  height: 350px;
+  padding: 20px 20px;
+  overflow: auto;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  position: relative;
+  z-index: 99;
+  border-radius: 5px;
+}
+
+.rec-arrow-right {
+  z-index: 99;
+}
+
+.rec-arrow-left {
+  z-index: 99;
+}
+
+.reviews:focus {
+  outline: none;
+}
+
+.reviews::-webkit-scrollbar {
+  width: 20px;
+}
+
+.avatar-review-p {
+  width: 10%;
+  border-radius: 50%;
+}
+
+.avatar-review {
+  margin: 0 auto;
+}
+
+.serviceImg {
+  height: 260px;
+  width: 390px;
+}
+
+.avatar-nameReview {
+  font-size: 20px;
+  font-weight: 700;
+}
+.quote-review {
+  width: 30px;
+}
+.reviewIcon {
+  color: #ffb400;
+}
+@media (max-width: 700px) {
+  .each-slide {
+    width: auto;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .review-title {
+    font-size: 18px;
+  }
+}
+
+/*********************************************************************
+%%%%%%%%%%%%%%%%% portfolio area style started %%%%%%%%%%%%%%%%%%
+*********************************************************************/
+
+.swiper-container-coverflow {
+  overflow: visible !important;
+}
+
+.portfolio_card {
+  border-radius: 15px !important;
+}
+
+.portfolio_card_img {
+  padding: 15px 15px 0px 15px;
+  border-radius: 15px !important;
+  border-collapse: collapse;
+}
+
+.portfolio-area {
+  padding: 100px 0px;
+  background: #f5f7ff;
+}
+
+.portfolio-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: gray;
+}
+
+.portfolio_sl_title {
+  text-transform: uppercase;
+}
+
+.portfolio-title {
+  color: #696a6c;
+}
+
+.portfolio-title:hover {
+  color: #fbcf0a;
+}
+
+.projects-card {
+  transition: 1s;
+  border: none;
+  box-shadow: none;
+}
+
+.portfolio-bg {
+  background: #f0f6fd !important;
+}
+
+.portfolioCard {
+  position: relative;
+}
+
+.portfolioCardImg {
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  height: 240px;
+  padding: 10px 10px;
+}
+
+.middlePortfolio {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #0468ec;
+}
+
+.projects-card:hover .middlePortfolio {
+  opacity: 1;
+  width: 100%;
+  color: #ffb400;
+}
+
+.project-title {
+  font-weight: 900;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.project-visit {
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.project-visit {
+  font-weight: 700;
+  color: #ffb400;
+}
+
+@media (max-width: 400px) {
+  .portfolio-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .portfolio-title {
+    font-size: 16px;
+  }
+}
+
+/***************************************************$$
+$$$ our Clients-area style start
+***************************************************/
+
+.client_logo {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.sliderD_client {
+  width: 100%;
+  margin: 1rem auto;
+}
+.slick-slider {
+  max-width: 100% !important;
+}
+
+.slick-initialized {
+  max-width: 100% !important;
+}
+
+.client_main_title {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #6a6b6d;
+}
+
+.client_main_title:hover {
+  color: #fbcf0a;
+}
+
+.client_hr {
+  background: rgb(78, 158, 223);
+  height: 5px;
+  width: 200px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.our_clients_area {
+  margin: 50px 0px;
+  height: auto !important;
+}
+
+/***************************************************$$
+$$$ project area style start
+****************************************************$$*/
+
+.project-area {
+  padding: 60px 0px;
+}
+
+.project-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/***************************************************$$
+$$$ Contact Us-area style start
+****************************************************$$*/
+
+#contact-area {
+  padding: 50px 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-content-area {
+  box-shadow: 0px 5px 20px 20px #f5f5fb;
+}
+
+.form-title {
+  margin: 0px;
+  padding-bottom: 35px;
+  font-weight: 700;
+  color: #696a6c;
+  text-transform: uppercase;
+}
+
+.form-title:hover {
+  color: #fbcf0a;
+}
+.form-content-area {
+  padding: 30px;
+}
+
+.contact-form input {
+  border: 1px solid #e4e4e4 !important;
+  padding-left: 5px !important;
+}
+
+.contact-form input::placeholder {
+  color: #757575;
+  font-weight: 500;
+}
+
+.contact-form textarea {
+  height: 200px;
+  border: 1px solid #e4e4e4;
+  padding: 15px;
+  font-weight: 500;
+}
+
+.contact-form textarea::placeholder {
+  padding: 15px;
+  color: #757575;
+  font-weight: 500;
+}
+
+.contact-form textarea:focus {
+  outline: none;
+  border: 1px solid black;
+}
+
+.contact-submitBtn {
+  padding: 15px 45px;
+  border-radius: 50px;
+  border: 2px solid #080b1a;
+  font-weight: bold;
+  background-color: #fff;
+}
+
+.contact-submitBtn:hover {
+  background: linear-gradient(50deg, #2fa3e6, #0468ec);
+
+  color: #fff;
+  border: 2px solid lightblue;
+}
+
+.budget-contact {
+  font-weight: bold !important;
+}
+
+#budgetInput {
+  padding-left: 5px;
+  font-weight: 500;
+}
+
+/* ------------------------------ */
+
+.cntInfo-content {
+  background: #fbcf0a;
+  color: #fff;
+}
+
+#cntInfo_title {
+  margin-top: 20px;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+@media (max-width: 573px) {
+  .contact_input_p {
+    padding: 0px !important;
+  }
+}
+
+/*********************************************************************
+%%%%%%%%%%%%%%%%% Footer area style started %%%%%%%%%%%%%%%%%%
+*********************************************************************/
+.footer-area {
+  padding: 0px 0px 0px 0px;
+  font-family: "Montserrat", sans-serif;
+  /* background-color: rgba(99, 176, 240, 0.7); */
+  background: #59b2f7;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+
+.ftr-countEv {
+  background: url("https://cdn.pixabay.com/photo/2018/03/03/20/02/laptop-3196481__340.jpg")
+    0 0 / cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+  color: #fff;
+  font-weight: bold;
+}
+.ftr-cuntEv-content {
+  background: rgba(105, 106, 108, 0.9);
+  height: 100%;
+  width: 100%;
+}
+.ftr-countEv h4 {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.ftr-title {
+  color: #696a6c;
+  font-size: 23px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .ftr-countEv {
+    height: 300px;
+  }
+}
+/* ------------------------- */
+
+.ftrLogo {
+  width: 160px;
+}
+
+.ftr-journey-des {
+  font-size: 16px;
+  color: gray;
+}
+
+#footer-contactBtn {
+  padding: 15px 45px;
+  border-radius: 50px;
+  border: 2px solid #080b1a;
+  font-weight: bold;
+  background-color: #fff;
+}
+
+#footer-contactBtn:hover {
+  background: #080b1a !important;
+  color: #fff;
+  border: 2px solid lightblue;
+}
+
+/* --------------------- */
+
+.footer-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.footer-link {
+  font-size: 16px;
+}
+
+.footer-link :hover {
+  padding-left: 2px;
+  transition: 0.3s;
+}
+
+/* .footer_Information {
+  color: #fbcf0a;
+} */
+
+.footer-Policy {
+  color: rgb(156, 156, 156);
+}
+
+.footer__ {
+  margin: 0px 10px;
+}
+
+.ftr_icon {
+  color: #fbcf0a;
+  font-size: 35px !important;
+  border: 2px solid #fff;
+  padding: 3px;
+  margin-bottom: 15px;
+}
+
+.ftr_icon:hover {
+  background: #0468ec;
+}
+
+@media (max-width: 800px) {
+  .ftr-Information {
+    flex-direction: column !important;
+  }
+  .ftr-icons-Links {
+    flex-direction: column !important;
+  }
+  .footer__ {
+    display: none;
+  }
+}
+
+@media (max-width: 988px) {
+  .ftr_contents_area {
+    text-align: center !important;
+  }
+  .ftr-Information {
+    justify-content: center;
+  }
+}
+
+/************************************SWIPER 3D SLIDER STYLE START****************************
+***************************************************************************************************
+***************************************************************************************************/
+.swiper3D_headLine {
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sliderD_area {
+  margin: 10rem auto;
+}
+
+.sliderD {
+  width: 88%;
+  margin: 0 auto;
+}
+
+.slide .slideCards {
+  width: 20rem;
+  margin: 0 auto;
+  padding: 50px 0px;
+}
+
+.slide {
+  transform: scale(0.9);
+  transition: transform 300ms;
+  opacity: 0.5;
+}
+
+.activeSlide {
+  transform: scale(1.3);
+  opacity: 1;
+  z-index: 100;
+}
+
+.arrow {
+  background: #fff;
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow svg {
+  transition: color 300ms;
+}
+
+.arrow svg:hover {
+  color: #68edf6;
+}
+
+.next {
+  right: 0%;
+  top: 50%;
+}
+
+.prev {
+  left: 0%;
+  top: 50%;
+}
+
+@media (max-width: 450px) {
+  .prev {
+    display: none;
+  }
+}
+
+/*******************SWIPER 3D SLIDER STYLE START**************
+***************************************************************/
+
+.iconsSidebar_area {
+  z-index: 300 !important;
+  position: fixed;
+  background: rgba(99, 176, 240, 0.7);
+  border-radius: 0px 5px 5px 0px;
+  top: 35vh;
+}
+
+@media (max-width: 700px) {
+  .iconsSidebar_area {
+    display: none !important;
+  }
+}
+
+.iconsSidebar_icons {
+  background: #fff;
+  box-shadow: 2px 2px 2px #1172ef;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  color: #4f94ee;
+}
+
+.sideIconSpan {
+  display: none;
+}
+.iconsSidebar_icons:hover {
+  z-index: 350;
+  position: relative;
+  cursor: pointer;
+}
+.iconsSidebar_icons:hover .sideIconSpan {
+  display: block !important;
+  position: absolute;
+  left: 130%;
+  bottom: 15%;
+  background: #fff;
+  padding: 5px 15px;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px 2px rgb(223, 222, 222);
+}
+
+@media (max-width: 900px) {
+  .arrow {
+    display: none !important;
+  }
+  .prev {
+    display: none !important;
+  }
+}
+
+/* ===================== blogs styles ================================= */
+.card-title {
+  font-weight: 900 !important;
+  text-shadow: 2px 2px #5ca3f0;
+}
+
+.otherBlog_title {
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 2px solid #fbcf0a;
+  margin-top: 30px;
+}
+
+.btn-floating {
+  background: #fbcf0a;
+}
+
+/* 3d carousal  */
+.phn-bg.fs-overlay.light:before {
+  display: none;
+}

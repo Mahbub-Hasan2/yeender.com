@@ -1,0 +1,88 @@
+@import "../HomePage/header.module.scss";
+@import "../../base/variables";
+@import "../../base/mixins";
+
+.about_page_1_section_area {
+  .about_hade_area {
+    // min-height: 450px;
+    h2 {
+      padding: 30px;
+      text-align: center;
+      font-weight: 800;
+      font-size: 55px;
+    }
+  }
+  .card {
+    text-align: center;
+    padding: 40px 0px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    h3 {
+      font-weight: 600;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    p {
+      line-height: 30px;
+      margin-bottom: 30px;
+    }
+    div {
+      // width: 40%;
+      margin: 0 auto;
+      @include clients-count-style(800, 27px, 600, 14px);
+    }
+  }
+}
+
+@media (max-width: 754px) {
+  .about_page_1_section_area {
+    .about_hade_area {
+      h2 {
+        padding: 20px;
+        font-weight: 800;
+        font-size: 45px;
+      }
+    }
+    .card {
+      h3 {
+        font-weight: 700;
+        font-size: 23px;
+        margin-bottom: 15px;
+      }
+      p {
+        line-height: 25px;
+        margin-bottom: 25px;
+        br {
+          display: none;
+        }
+      }
+      div {
+        @include clients-count-style(700, 20px, 500, 14px);
+      }
+    }
+  }
+}
+
+@media (max-width: 410px) {
+  .about_page_1_section_area {
+    .about_hade_area {
+      h2 {
+        font-weight: 700;
+        font-size: 35px;
+      }
+    }
+    .card {
+      h3 {
+        font-weight: 700;
+        font-size: 19px;
+      }
+      p {
+        line-height: 23px;
+        margin-bottom: 20px;
+      }
+      div {
+        @include clients-count-style(700, 18px, 13px, 500);
+      }
+    }
+  }
+}

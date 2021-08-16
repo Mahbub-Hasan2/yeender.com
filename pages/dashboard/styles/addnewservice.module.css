@@ -1,0 +1,21 @@
+/* ================ post new service=============================  */
+.contents {
+  max-width: 100%;
+}
+
+.input {
+  border: 2px solid gray !important;
+  padding: 0;
+}
+
+.input::placeholder {
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.textarea {
+  height: 250px;
+}
+.textarea:focus {
+  outline: none;
+}

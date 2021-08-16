@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+@import '../Style/base/variables';
+
+.blogArea {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 5px;
+
+    .head_bar {
+      p {
+        margin-bottom: 5px;
+        span {
+          color: $yellow;
+          font-weight: 500;
+          padding: 0px 5px;
+          font-size: 15px;
+        }
+      }
+      h4 {
+        font-weight: 700;
+        font-size: 24px;
+      }
+      .date {
+        span {
+          font-weight: 600;
+          font-size: 17px;
+        }
+      }
+    }
+    .body_bar {
+      div {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // comments section start
+  .comments {
+    .comment {
+      padding: 25px;
+      border: 2px solid #e2d6d6;
+
+      p {
+        color: #6d839d;
+      }
+      div {
+        padding-left: 0px;
+        h5 {
+          color: #132b50;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  // add comment
+  .add_comment {
+    margin: 30px 0px;
+    h4 {
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    textarea {
+      width: 100%;
+      height: 190px;
+      background: #fbfaf8;
+      border: none;
+      border: 2px solid #e2d6d63b;
+      padding: 5px;
+    }
+    textarea::placeholder {
+      padding-left: 5px;
+    }
+    textarea:focus {
+      outline: none;
+      border: 2px solid #e2d6d6;
+      border-radius: 5px;
+    }
+    button {
+      font-weight: 700;
+      padding: 15px 20px;
+      background: $yellow;
+      border: none;
+      border-radius: 5px;
+      margin-top: 30px;
+    }
+  }
+
+  // comments section end
+}
