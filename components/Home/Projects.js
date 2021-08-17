@@ -6,7 +6,6 @@ import { UserContext } from '../Layout';
 
 const Projects = () => {
     const { projects } = useContext(UserContext);
-    console.log(projects)
     return (
         <div className={style.projects_area_home}>
             <h2 className={style.main_title}>Our Recent Works</h2>

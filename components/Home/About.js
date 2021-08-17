@@ -1,7 +1,5 @@
 import { Col, Row } from 'react-bootstrap';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import style from '../../Style/Pages/HomePage/about.module.scss';
-// ..
 
 const About = ({ data }) => {
     const info = { ...data.result[0] };
@@ -11,15 +9,15 @@ const About = ({ data }) => {
             <div className={style.container}>
                 <Row className="align-items-center">
                     <Col md={6} className={style.col}>
-                        <LazyLoadImage
+                        {/* <LazyLoadImage
                             alt="alt"
                             className="img-fluid"
                             effect="blur"
                             // height={500}
                             src="https://i.imgur.com/2O1VUhl.jpg" // use normal <img> attributes as props
-                            // width={400}
-                        />
-                        {/* <img className="img-fluid" src="https://i.imgur.com/2O1VUhl.jpg" alt="" /> */}
+                            // width={400} */}
+                        {/* /> */}
+                        <img className="img-fluid" src="https://i.imgur.com/2O1VUhl.jpg" alt="" />
                     </Col>
                     <Col md={6} className={`${style.text_contents} ${style.col}`}>
                         <h2 className="mt-3">
