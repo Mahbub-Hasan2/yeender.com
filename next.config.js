@@ -4,8 +4,8 @@ module.exports = {
       domains: ['i.imgur.com'],
     },
   };
-// module.exports = {
-//     future: {
-//       webpack5: true
-//     }
-//   };
+module.exports = {
+    future: {
+      webpack5: true
+    }
+  };
