@@ -9,7 +9,7 @@ import { Col, Row } from 'react-bootstrap';
 import { UserContext } from '../components/Layout';
 import Loading from '../components/ShareComponents/Loading';
 import yeenderServer from '../serverConfig';
-import style from '../style/components/review.module.scss';
+import style from '../style/components/reviewpage.module.scss';
 
 const Login = dynamic(import('./login'), { loading: () => <Loading /> });
 
