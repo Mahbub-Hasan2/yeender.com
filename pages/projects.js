@@ -31,7 +31,7 @@ const projects = ({ data }) => {
             {data ? (
                 <div className="project-area">
                     <Container>
-                        <h4 className="project-title">OUR PROJECTS</h4>
+                        <h4 className="project-title">OUR PROJECTS -</h4>
                         <Project />
                     </Container>
                 </div>
