@@ -14,7 +14,7 @@ import style from '../style/components/related.module.scss';
 const Login = dynamic(import('./login'), { loading: () => <Loading /> });
 
 const review = () => {
-    const { loggedInUser, setLoggedInUser, admin } = useContext(UserContext);
+    const { loggedInUser, setLoggedInUser } = useContext(UserContext);
 
     // NEW review calect to form
     const [newReview, setNewReview] = useState({});
@@ -61,7 +61,7 @@ const review = () => {
                 <meta name="keywords" content="yeender, Web Design, Web Development, Digital Marketing, Retail Business Website, Educational Website, E-commerce Website, Blog and magazine Website, Landing page, Small Business Website" />
                 <title>Yeender: review page</title>
             </Head>
-            {loggedInUser.email ? (
+            {/* {loggedInUser.email ? ( */}
                 <div className={style.review_area}>
                     <h3 className={style.review_title}>This is review section</h3>
                     <hr className="client_hr" />
@@ -160,9 +160,9 @@ const review = () => {
                         </Row>
                     </Container>
                 </div>
-            ) : (
+            {/* ) : (
                 <Login />
-            )}
+            )} */}
         </>
     );
 };

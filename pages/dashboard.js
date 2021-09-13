@@ -6,13 +6,12 @@ import { UserContext } from '../components/Layout';
 import Loading from '../components/ShareComponents/Loading';
 import style from '../styles/dashboard.module.css';
 
-const Sidebar = dynamic(import("../components/dashboard/Sidebar"),{ loading: () => <Loading /> });
 const Login = dynamic(import("./login"),{ loading: () => <Loading /> });
 
 const dashboard = () => {
-    const { loggedInUser, setLoggedInUser, admin } = useContext(UserContext);
+    const { loggedInUser, setLoggedInUser} = useContext(UserContext);
 
-    if (loggedInUser.email && admin && loggedInUser.email == admin.email) {
+    if (loggedInUser.email) {
         return (
             <div className={style.dashboardPage}>
                 <Head>
@@ -22,7 +21,6 @@ const dashboard = () => {
                     <meta name="keywords" content="yeender, Web Design, Web Development, Digital Marketing, Retail Business Website, Educational Website, E-commerce Website, Blog and magazine Website, Landing page, Small Business Website" />
                     <title>Yeender: deshboard page</title>
                 </Head>
-                <Sidebar />
                 <Container>
                     <h1 className={style.headLine}>This is Our dashboard page.</h1>
                     <CardContent className={style.dasContent}>

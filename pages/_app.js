@@ -2,7 +2,7 @@
 import dynamic from 'next/dynamic';
 import 'swiper/swiper.scss';
 import Loading from '../components/ShareComponents/Loading';
-import '../styles/globals.scss';
+// import '../styles/globals.scss';
 
 const Layout = dynamic(() => import('../components/Layout'), {
     loading: () => <Loading />,

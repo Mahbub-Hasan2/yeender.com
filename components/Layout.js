@@ -7,7 +7,6 @@ import { createContext, useEffect, useState } from 'react';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 import Loading from './ShareComponents/Loading';
 
-const Sidebar = dynamic(import('./dashboard/Sidebar'), { loading: () => <Loading /> });
 const Footer = dynamic(import('./ShareComponents/Footer'), { loading: () => <Loading /> });
 const Navbar = dynamic(import('./ShareComponents/Navbar'), { loading: () => <Loading /> });
 const IconsSidebar = dynamic(import('./ShareComponents/IconsSidebar'), {
@@ -25,7 +24,6 @@ const Layout = ({ children }) => {
     // OUR ABOUT INFORMATION STATE
     const [ourAbout, setOurAbout] = useState({});
     const [loggedInUser, setLoggedInUser] = useState({});
-    const [admin, setAdmin] = useState({});
     const [projects, setProjects] = useState([]);
     const [categories, setCategories] = useState("");
 
@@ -45,8 +43,6 @@ const Layout = ({ children }) => {
                 setOurAbout,
                 loggedInUser,
                 setLoggedInUser,
-                admin,
-                setAdmin,
                 projects,
                 setProjects,
                 categories,
@@ -72,13 +68,7 @@ const Layout = ({ children }) => {
                         experience with Yeender.
                     </title>
 
-                    {/* 3d-react-carousal css link */}
-                    <link
-                        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-                        rel="stylesheet"
-                        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-                        crossOrigin="anonymous"
-                    />
+                   
 
                     {/* css links */}
                     {/* <!-- Materialize CSS link --> */}
@@ -129,10 +119,6 @@ const Layout = ({ children }) => {
 
                 <div className={activeRouter.pathname == '/' ? '' : 'fixdNavbar'}>
                     <Navbar />
-                </div>
-
-                <div style={style}>
-                    <Sidebar />
                 </div>
 
                 {children}

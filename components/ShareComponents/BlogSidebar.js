@@ -1,14 +1,9 @@
 import Avatar from '@material-ui/core/Avatar';
 import Paper from '@material-ui/core/Paper';
-import dynamic from 'next/dynamic';
 import React from 'react';
 import style from '../../styles/blogSidebar.module.scss';
 import { UserContext } from '../Layout';
-import Loading from './Loading';
 
-const PostNewBlog = dynamic(import('../dashboard/Modals/PostNewBlog'), {
-    loading: () => <Loading />,
-});
 
 const categoriesData = [
     "Web Development",

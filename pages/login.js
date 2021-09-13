@@ -3,9 +3,8 @@ import Container from '@material-ui/core/Container';
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/firestore';
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import { UserContext } from '../components/Layout';
-import yeenderServer from '../serverConfig';
 import style from '../styles/login.module.css';
 
 const Login = () => {
@@ -19,7 +18,7 @@ const Login = () => {
         appId: '1:724915768331:web:a03e14f63ceb9b6b100b0e',
     };
 
-    const { loggedInUser, setLoggedInUser, admin, setAdmin } = useContext(UserContext);
+    const { loggedInUser, setLoggedInUser } = useContext(UserContext);
     // if (loggedInUser.email) {
     //     localStorage.setItem('email', window.loggedInUser.email);
     // }
@@ -67,15 +66,6 @@ const Login = () => {
     };
 
 
-    useEffect(() => {
-        if (loggedInUser.email) {
-            fetch(`${yeenderServer}/admin/${loggedInUser.email}`)
-                .then((res) => res.json())
-                .then((data) => {
-                    setAdmin(data[0]);
-                });
-        }
-    }, [loggedInUser.email, setAdmin]);
 
     return (
         <div className={`${style.loginArea} d-flex align-items-center`}>
